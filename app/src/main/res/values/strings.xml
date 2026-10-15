@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pocket Arcade</string>
+    <string name="subtitulo_app">Central de Desafios</string>
+
+    <!-- PERSONALIZE: dados dos integrantes. Para trabalho individual, deixe integrante2_nome vazio. -->
+    <string name="integrante1_nome">João Victor Fernandes Castro</string>
+    <string name="integrante1_matricula">20251012000180</string>
+    <string name="integrante1_curso">Análise e Desenvolvimento de Sistemas</string>
+    <string name="integrante2_nome"></string>
+    <string name="integrante2_matricula"></string>
+    <string name="integrante2_curso"></string>
+
+    <string name="rotulo_nome">Nome: %1$s</string>
+    <string name="rotulo_matricula">Matrícula: %1$s</string>
+    <string name="rotulo_curso">Curso: %1$s</string>
+
+    <!-- Navegação / geral -->
+    <string name="voltar_menu">Voltar ao menu</string>
+    <string name="encerrar_sessao">Encerrar sessão</string>
+    <string name="erro_apelido_ausente">Apelido não informado. Volte e entre novamente.</string>
+    <string name="nova_partida">Nova partida</string>
+    <string name="logo_descricao">Logotipo do Pocket Arcade: um controle de videogame</string>
+
+    <!-- Tela 1 -->
+    <string name="hint_apelido">Seu apelido</string>
+    <string name="entrar">Entrar no Pocket Arcade</string>
+    <string name="dica_dupla">Dados dos integrantes do grupo</string>
+    <string name="erro_apelido_curto">O apelido precisa ter ao menos 3 caracteres.</string>
+    <string name="ultimo_modulo">Sessão encerrada. Último módulo usado: %1$s</string>
+
+    <!-- Tela 2 -->
+    <string name="saudacao">Olá, %1$s!</string>
+    <string name="central_subtitulo">Escolha um desafio e mostre do que você é capaz.</string>
+    <string name="abrir">Abrir</string>
+    <string name="central_rodape">Dica: todos os desafios podem ser repetidos quantas vezes você quiser. Boa sorte!</string>
+
+    <string name="modulo_scanner">Scanner de Mensagens</string>
+    <string name="modulo_arena">Arena</string>
+    <string name="modulo_codigo">Código Secreto</string>
+    <string name="modulo_randomizador">Randomizador</string>
+
+    <string name="desc_scanner">Analise uma mensagem em cinco medidas: caracteres, palavras, vogais, texto invertido e palíndromo.</string>
+    <string name="desc_arena">Dispute uma melhor de três de Pedra, Papel e Tesoura contra o dispositivo.</string>
+    <string name="desc_codigo">Descubra os quatro dígitos diferentes do cofre em até oito tentativas.</string>
+    <string name="desc_randomizador">Cadastre palavras por categoria e sorteie um item surpresa.</string>
+
+    <string name="icone_scanner">Ícone de lupa do Scanner de Mensagens</string>
+    <string name="icone_arena">Ícone de troféu da Arena</string>
+    <string name="icone_codigo">Ícone de cofre do Código Secreto</string>
+    <string name="icone_randomizador">Ícone de dado do Randomizador</string>
+
+    <!-- Tela 3: Scanner -->
+    <string name="hint_mensagem">Digite uma mensagem</string>
+    <string name="analisar">Analisar</string>
+    <string name="limpar">Limpar</string>
+    <string name="erro_mensagem_curta">Digite ao menos 3 caracteres.</string>
+    <string name="medida">Medida</string>
+    <string name="resultado">Resultado</string>
+    <string name="medida_caracteres">Caracteres sem espaços</string>
+    <string name="medida_palavras">Palavras</string>
+    <string name="medida_vogais">Vogais</string>
+    <string name="medida_invertido">Texto invertido</string>
+    <string name="medida_palindromo">Palíndromo</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+
+    <!-- Tela 4: Arena -->
+    <string name="arena_instrucao">Escolha sua jogada. Vence quem fizer duas vitórias primeiro.</string>
+    <string name="jogada_pedra">Pedra</string>
+    <string name="jogada_papel">Papel</string>
+    <string name="jogada_tesoura">Tesoura</string>
+    <string name="desc_pedra">Pedra</string>
+    <string name="desc_papel">Papel</string>
+    <string name="desc_tesoura">Tesoura</string>
+    <string name="desc_escolha_jogador">Jogada do jogador</string>
+    <string name="desc_escolha_dispositivo">Jogada do dispositivo</string>
+    <string name="placar_jogador">Você</string>
+    <string name="placar_dispositivo">Dispositivo</string>
+    <string name="placar_formato">%1$d x %2$d</string>
+    <string name="rodada_vitoria">Você venceu a rodada!</string>
+    <string name="rodada_derrota">O dispositivo venceu a rodada!</string>
+    <string name="rodada_empate">Empate! Ninguém pontua.</string>
+    <string name="final_vitoria">Vitória! Você venceu a partida.</string>
+    <string name="final_derrota">Derrota! O dispositivo venceu a partida.</string>
+    <string name="vs">VS</string>
+    <string name="aguardando_jogada">Faça sua jogada</string>
+
+    <!-- Tela 5: Código Secreto -->
+    <string name="codigo_instrucao">Digite quatro números diferentes</string>
+    <string name="hint_tentativa">Quatro dígitos</string>
+    <string name="tentar">Tentar</string>
+    <string name="tentativas_restantes">Tentativa %1$d de %2$d</string>
+    <string name="legenda_verde">Verde: dígito certo na posição certa</string>
+    <string name="legenda_amarelo">Amarelo: dígito existe, mas em outra posição</string>
+    <string name="legenda_cinza">Cinza: dígito não existe no código</string>
+    <string name="historico_titulo">Histórico das tentativas</string>
+    <string name="erro_vazio">Digite quatro números.</string>
+    <string name="erro_tamanho">O código precisa ter exatamente quatro dígitos.</string>
+    <string name="erro_repetido">Não repita dígitos: os quatro números devem ser diferentes.</string>
+    <string name="resumo_tentativa">#%1$d  %2$s — certos: %3$d · fora do lugar: %4$d</string>
+    <string name="codigo_vitoria">Cofre aberto! Você descobriu o código.</string>
+    <string name="codigo_derrota">Fim das tentativas! O código era %1$s.</string>
+    <string name="codigo_estatisticas">Tentativas usadas: %1$d · Tempo: %2$s</string>
+
+    <!-- Tela 6: Randomizador -->
+    <string name="hint_valor">Palavra ou item</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="sortear">Sortear</string>
+    <string name="alternar_lista">Lista/grade</string>
+    <string name="erro_valor_vazio">Digite uma palavra para adicionar.</string>
+    <string name="erro_sem_itens">Não há itens na categoria %1$s para sortear.</string>
+    <string name="item_adicionado">Item adicionado em %1$s.</string>
+    <string name="item_removido">Item removido: %1$s</string>
+    <string name="dica_remover">Dica: mantenha um item pressionado para excluí-lo.</string>
+    <string name="sorteado_formato">Sorteado: %1$s (%2$s)</string>
+    <string name="sorteado_vazio">Nenhum item sorteado ainda.</string>
+    <string name="categoria_do_item">%1$s</string>
+</resources>

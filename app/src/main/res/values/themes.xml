@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PocketArcade" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/neon_pink</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/neon_cyan</item>
+        <item name="colorOnSecondary">@color/bg</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorError">@color/error</item>
+        <item name="android:colorBackground">@color/bg</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">@color/bg</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+    </style>
+
+    <style name="Texto" parent="TextAppearance.Material3.BodyLarge" />
+
+    <style name="Texto.Titulo">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">@dimen/texto_titulo</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Texto.Subtitulo">
+        <item name="android:textColor">@color/neon_cyan</item>
+        <item name="android:textSize">@dimen/texto_subtitulo</item>
+    </style>
+
+    <style name="Texto.Corpo">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:textSize">@dimen/texto_corpo</item>
+    </style>
+</resources>

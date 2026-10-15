@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="espaco_pequeno">8dp</dimen>
+    <dimen name="espaco_medio">16dp</dimen>
+    <dimen name="espaco_grande">24dp</dimen>
+    <dimen name="raio_card">16dp</dimen>
+    <dimen name="borda_card">2dp</dimen>
+    <dimen name="logo_tamanho">120dp</dimen>
+    <dimen name="icone_painel">72dp</dimen>
+    <dimen name="icone_jogada">64dp</dimen>
+    <dimen name="icone_escolha">96dp</dimen>
+    <dimen name="botao_jogada">96dp</dimen>
+    <dimen name="tile_clue">44dp</dimen>
+    <dimen name="texto_titulo">28sp</dimen>
+    <dimen name="texto_subtitulo">18sp</dimen>
+    <dimen name="texto_corpo">16sp</dimen>
+</resources>

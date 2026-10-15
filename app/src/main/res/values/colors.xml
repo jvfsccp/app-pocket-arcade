@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#0E0B1F</color>
+    <color name="surface">#1B1638</color>
+    <color name="surface_alt">#2A2158</color>
+    <color name="white">#FFFFFF</color>
+    <color name="neon_pink">#FF2E88</color>
+    <color name="neon_cyan">#00E5FF</color>
+    <color name="neon_yellow">#FFD600</color>
+    <color name="neon_green">#39FF88</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B8B3D9</color>
+    <color name="error">#FF5252</color>
+    <color name="clue_certo">#2ECC71</color>
+    <color name="clue_posicao">#F1C40F</color>
+    <color name="clue_ausente">#5C5C70</color>
+    <color name="ripple">#3300E5FF</color>
+</resources>

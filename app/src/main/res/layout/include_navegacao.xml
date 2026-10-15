@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/espaco_medio">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVoltarMenu"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/espaco_pequeno"
+        android:layout_weight="1"
+        android:text="@string/voltar_menu"
+        android:textColor="@color/neon_cyan"
+        app:strokeColor="@color/neon_cyan" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnEncerrarSessao"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/espaco_pequeno"
+        android:layout_weight="1"
+        android:text="@string/encerrar_sessao"
+        android:textColor="@color/neon_pink"
+        app:strokeColor="@color/neon_pink" />
+</LinearLayout>

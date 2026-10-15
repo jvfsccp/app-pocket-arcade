@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- NestedScrollView como raiz, com um único LinearLayout vertical como filho direto. -->
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/raiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/espaco_grande">
+
+        <TextView
+            android:id="@+id/tvSaudacao"
+            style="@style/Texto.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvSubtituloCentral"
+            style="@style/Texto.Subtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espaco_grande"
+            android:text="@string/central_subtitulo" />
+
+        <!-- Painel: Scanner -->
+        <LinearLayout
+            android:id="@+id/painelScanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espaco_medio"
+            android:background="@drawable/bg_card"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/espaco_medio">
+
+            <ImageView
+                android:layout_width="@dimen/icone_painel"
+                android:layout_height="@dimen/icone_painel"
+                android:contentDescription="@string/icone_scanner"
+                android:src="@drawable/ic_scanner" />
+
+            <TextView
+                style="@style/Texto.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:gravity="center"
+                android:text="@string/modulo_scanner"
+                android:textSize="22sp" />
+
+            <TextView
+                style="@style/Texto.Corpo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:gravity="center"
+                android:text="@string/desc_scanner" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnScanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_medio"
+                android:text="@string/abrir" />
+        </LinearLayout>
+
+        <!-- Painel: Arena -->
+        <LinearLayout
+            android:id="@+id/painelArena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espaco_medio"
+            android:background="@drawable/bg_card"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/espaco_medio">
+
+            <ImageView
+                android:layout_width="@dimen/icone_painel"
+                android:layout_height="@dimen/icone_painel"
+                android:contentDescription="@string/icone_arena"
+                android:src="@drawable/ic_arena" />
+
+            <TextView
+                style="@style/Texto.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:gravity="center"
+                android:text="@string/modulo_arena"
+                android:textSize="22sp" />
+
+            <TextView
+                style="@style/Texto.Corpo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:gravity="center"
+                android:text="@string/desc_arena" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnArena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_medio"
+                android:text="@string/abrir" />
+        </LinearLayout>
+
+        <!-- Painel: Código Secreto -->
+        <LinearLayout
+            android:id="@+id/painelCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espaco_medio"
+            android:background="@drawable/bg_card"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/espaco_medio">
+
+            <ImageView
+                android:layout_width="@dimen/icone_painel"
+                android:layout_height="@dimen/icone_painel"
+                android:contentDescription="@string/icone_codigo"
+                android:src="@drawable/ic_codigo" />
+
+            <TextView
+                style="@style/Texto.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:gravity="center"
+                android:text="@string/modulo_codigo"
+                android:textSize="22sp" />
+
+            <TextView
+                style="@style/Texto.Corpo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:gravity="center"
+                android:text="@string/desc_codigo" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCodigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_medio"
+                android:text="@string/abrir" />
+        </LinearLayout>
+
+        <!-- Painel: Randomizador -->
+        <LinearLayout
+            android:id="@+id/painelRandomizador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espaco_medio"
+            android:background="@drawable/bg_card"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/espaco_medio">
+
+            <ImageView
+                android:layout_width="@dimen/icone_painel"
+                android:layout_height="@dimen/icone_painel"
+                android:contentDescription="@string/icone_randomizador"
+                android:src="@drawable/ic_randomizador" />
+
+            <TextView
+                style="@style/Texto.Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:gravity="center"
+                android:text="@string/modulo_randomizador"
+                android:textSize="22sp" />
+
+            <TextView
+                style="@style/Texto.Corpo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:gravity="center"
+                android:text="@string/desc_randomizador" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRandomizador"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_medio"
+                android:text="@string/abrir" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/Texto.Corpo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/central_rodape" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

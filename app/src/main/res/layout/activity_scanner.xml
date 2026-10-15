@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/raiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/espaco_grande">
+
+        <TextView
+            style="@style/Texto.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/modulo_scanner" />
+
+        <TextView
+            style="@style/Texto.Subtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/espaco_medio"
+            android:text="@string/desc_scanner" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilMensagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_mensagem">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etMensagem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|start"
+                android:inputType="textMultiLine|textCapSentences"
+                android:minLines="3" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAnalisar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/espaco_pequeno"
+                android:layout_weight="1"
+                android:text="@string/analisar" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLimpar"
+                style="@style/Widget.Material3.Button.TonalButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espaco_pequeno"
+                android:layout_weight="1"
+                android:text="@string/limpar" />
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/painelResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_grande"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/espaco_medio"
+            android:shrinkColumns="1"
+            android:stretchColumns="1"
+            android:visibility="gone">
+
+            <TableRow android:paddingBottom="@dimen/espaco_pequeno">
+
+                <TextView
+                    style="@style/Texto.Subtitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medida"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/Texto.Subtitulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/resultado"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:paddingVertical="@dimen/espaco_pequeno">
+
+                <TextView
+                    style="@style/Texto.Corpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medida_caracteres" />
+
+                <TextView
+                    android:id="@+id/tvCaracteres"
+                    style="@style/Texto.Corpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:paddingVertical="@dimen/espaco_pequeno">
+
+                <TextView
+                    style="@style/Texto.Corpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medida_palavras" />
+
+                <TextView
+                    android:id="@+id/tvPalavras"
+                    style="@style/Texto.Corpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:paddingVertical="@dimen/espaco_pequeno">
+
+                <TextView
+                    style="@style/Texto.Corpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medida_vogais" />
+
+                <TextView
+                    android:id="@+id/tvVogais"
+                    style="@style/Texto.Corpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:paddingVertical="@dimen/espaco_pequeno">
+
+                <TextView
+                    style="@style/Texto.Corpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medida_invertido" />
+
+                <TextView
+                    android:id="@+id/tvInvertido"
+                    style="@style/Texto.Corpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow android:paddingVertical="@dimen/espaco_pequeno">
+
+                <TextView
+                    style="@style/Texto.Corpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medida_palindromo" />
+
+                <TextView
+                    android:id="@+id/tvPalindromo"
+                    style="@style/Texto.Corpo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
+        <include
+            android:id="@+id/navegacao"
+            layout="@layout/include_navegacao" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
